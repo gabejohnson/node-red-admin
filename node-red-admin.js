@@ -33,7 +33,8 @@ var commands = {
     "install": require("./lib/commands/install"),
     "remove": require("./lib/commands/remove"),
     "login": require("./lib/commands/login"),
-    "hash-pw": require("./lib/commands/hash")
+    "hash-pw": require("./lib/commands/hash"),
+    "freeze": require("./lib/commands/freeze")
 };
 
 
@@ -53,7 +54,8 @@ function help() {
         "   search\n" +
         "   install\n" +
         "   remove\n" +
-        "   hash-pw\n"
+        "   hash-pw\n" +
+        "   freeze\n"
     ;
     console.log(helpText);
 }
